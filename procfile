@@ -1,0 +1,3 @@
+release: python manage.py makemigration
+release: pyhton manage.py migrate --no-input
+web: gunicorn Myproject.wsgi
